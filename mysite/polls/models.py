@@ -14,6 +14,7 @@ class Poll(models.Model):
         return self.question
 
 class Choice(models.Model):
+    #I am a different minor change
     poll = models.ForeignKey(Poll)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField()
