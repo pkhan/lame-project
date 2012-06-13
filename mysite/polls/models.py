@@ -11,6 +11,7 @@ class Poll(models.Model):
     def opened_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
     
+    #something else
     def __unicode__(self):
         return self.question
 
