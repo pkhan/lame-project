@@ -4,6 +4,9 @@ import datetime
 
 # Create your models here.
 class Poll(models.Model):
+    """
+    The poll question being asked
+    """
     #I am a minor change
     question = models.CharField(max_length=200)
     pub_date =models.DateTimeField('date published')
