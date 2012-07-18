@@ -7,7 +7,7 @@ class Poll(models.Model):
     """
     The poll question being asked
     """
-    #I am a minor change
+    #I am a minor changea
     question = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
